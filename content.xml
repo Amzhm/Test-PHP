@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+<sidebar>
+  <lang code="fr">
+    <n>Amziane HAMRANI</n>
+    <role>Étudiant ingénieur</role>
+    <bio>Passionné par l'informatique, la data, l'optimisation et le développement logiciel.</bio>
+    <menu>
+      <item id="infos">Infos</item>
+      <item id="educations">Formations</item>
+      <item id="experiences">Expériences</item>
+      <item id="projects">Projets</item>
+      <item id="skills">Compétences</item>
+      <item id="interests">Intérêts</item>
+    </menu>
+  </lang>
+  <lang code="en">
+    <n>Amziane HAMRANI</n>
+    <role>Engineering student</role>
+    <bio>Passionate about computer science, data, optimization and software development.</bio>
+    <menu>
+      <item id="infos">Info</item>
+      <item id="educations">Education</item>
+      <item id="experiences">Experience</item>
+      <item id="projects">Projects</item>
+      <item id="skills">Skills</item>
+      <item id="interests">Interests</item>
+    </menu>
+  </lang>
+  <lang code="ar">
+    <n>أمزيان حمراني</n>
+    <role>طالب مهندس</role>
+    <bio>مهتم بالمعلوماتية والبيانات والتحسين وتطوير البرمجيات.</bio>
+    <menu>
+      <item id="infos">المعلومات</item>
+      <item id="educations">التكوين الأكاديمي</item>
+      <item id="experiences">الخبرات المهنية</item>
+      <item id="projects">المشاريع</item>
+      <item id="skills">المهارات</item>
+      <item id="interests">الهوايات</item>
+    </menu>
+  </lang>
+</sidebar>
+
+<presentation>
+    <lang code="fr">
+        <title>Bienvenue !</title>
+        <desc>
+            Je m'appelle <strong>Amziane HAMRANI</strong>, étudiant ingénieur passionné par l'informatique, la data, l'optimisation et le développement logiciel.<br/>
+            Sur ce portfolio, découvrez mon parcours, mes projets et bien plus encore !<br/>
+            <br/>Bonne visite !
+        </desc>
+        <video>https://www.youtube.com/embed/bzs0wFP_6ck</video>
+    </lang>
+    <lang code="en">
+        <title>Welcome!</title>
+        <desc>
+            My name is <strong>Amziane HAMRANI</strong>, an engineering student passionate about computer science, data, optimization, and software development.<br/>
+            Explore my background, projects, and much more!<br/>
+            <br/>Enjoy your visit!
+        </desc>
+        <video>https://www.youtube.com/embed/bzs0wFP_6ck</video>
+    </lang>
+    <lang code="ar">
+        <title>أهلاً وسهلاً!</title>
+        <desc>
+            اسمي <strong>أمزيان حمراني</strong>، طالب مهندس مهتم بالمعلوماتية والبيانات والتحسين وتطوير البرمجيات.<br/>
+            اكتشف في هذا البورتفوليو مساري ومشاريعي والمزيد!<br/>
+            <br/>تمنياتي بزيارة ممتعة!
+        </desc>
+        <video>https://www.youtube.com/embed/bzs0wFP_6ck</video>
+    </lang>
+</presentation>
+
+  <!-- Infos personnelles -->
+  <personal_info>
+    <lang code="fr">
+      <firstname>HAMRANI</firstname>
+      <n>Amziane</n>
+      <email>amziane.hamrani@gmail.com</email>
+      <phone>+33 7 76 97 94 73</phone>
+    </lang>
+    <lang code="en">
+      <firstname>HAMRANI</firstname>
+      <n>Amziane</n>
+      <email>amziane.hamrani@gmail.com</email>
+      <phone>+33 7 76 97 94 73</phone>
+    </lang>
+    <lang code="ar">
+      <firstname>حمراني</firstname>
+      <n>أمزيان</n>
+      <email>amziane.hamrani@gmail.com</email>
+      <phone>+٣٣ ٧ ٧٦ ٩٧ ٩٤ ٧٣</phone>
+    </lang>
+  </personal_info>
+  
+  <!-- Formations -->
+    <educations>
+        <lang code="fr">
+            <education>
+                <title>Ingénieur Informatique</title>
+                <year>Sep 2023 - Sep 2026</year>
+                <university>Université Sorbonne Paris Nord</university>
+                <location>Villetaneuse, France</location>
+            </education>
+            <education>
+                <title>Licence Informatique</title>
+                <year>Sep 2021 - Juin 2023</year>
+                <university>Université Sorbonne Paris Nord</university>
+                <location>Villetaneuse, France</location>
+            </education>
+            <education>
+                <title>Classes préparatoires Sciences et Technologies</title>
+                <year>Oct 2020 - Juin 2021</year>
+                <university>École Nationale Polytechnique</university>
+                <location>Alger, Algérie</location>
+            </education>
+        </lang>
+
+        <lang code="en">
+            <education>
+                <title>Computer Engineering</title>
+                <year>Sep 2023 - Sep 2026</year>
+                <university>Sorbonne Paris North University</university>
+                <location>Villetaneuse, France</location>
+            </education>
+            <education>
+                <title>Bachelor's in Computer Science</title>
+                <year>Sep 2021 - Jun 2023</year>
+                <university>Sorbonne Paris North University</university>
+                <location>Villetaneuse, France</location>
+            </education>
+            <education>
+                <title>Preparatory Classes in Science and Technology</title>
+                <year>Oct 2020 - Jun 2021</year>
+                <university>National Polytechnic School</university>
+                <location>Algiers, Algeria</location>
+            </education>
+        </lang>
+
+        <lang code="ar">
+            <education>
+                <title>مهندس معلوماتية</title>
+                <year>سبتمبر 2023 - سبتمبر 2026</year>
+                <university>جامعة سوربون باريس نورد</university>
+                <location>فيليتانوز، فرنسا</location>
+            </education>
+            <education>
+                <title>ليسانس في علوم الحاسوب</title>
+                <year>سبتمبر 2021 - يونيو 2023</year>
+                <university>جامعة سوربون باريس نورد</university>
+                <location>فيليتانوز، فرنسا</location>
+            </education>
+            <education>
+                <title>الأقسام التحضيرية في العلوم والتكنولوجيا</title>
+                <year>أكتوبر 2020 - يونيو 2021</year>
+                <university>المدرسة الوطنية المتعددة التقنيات</university>
+                <location>الجزائر العاصمة، الجزائر</location>
+            </education>
+        </lang>
+    </educations>
+
+  <!-- Expérience professionnelle -->
+    <experiences>
+        <lang code="fr">
+            <experience>
+            <position>Alternant ingénieur de production</position>
+            <company>GRDF</company>
+            <location>Paris, France</location>
+            <year>Sep 2023 - Aujourd'hui</year>
+            <desc>
+                En tant qu'alternant ingénieur de production chez GRDF, j'interviens dans le suivi et la maintenance
+                des environnements applicatifs sous Linux. Mes missions incluent l'industrialisation des processus
+                de déploiement, le patching des systèmes d'exploitation RHEL, ainsi que la supervision quotidienne
+                des applications métiers critiques.
+            </desc>
+            <skills>
+                <skill>Bash</skill>
+                <skill>SQL</skill>
+                <skill>Linux RHEL 7/8</skill>
+                <skill>Supervision applicative</skill>
+                <skill>Automatisation</skill>
+                <skill>GitLab CI</skill>
+            </skills>
+            </experience>
+        </lang>
+
+        <lang code="en">
+            <experience>
+            <position>IT Production Engineer Apprentice</position>
+            <company>GRDF</company>
+            <location>Paris, France</location>
+            <year>Sep 2023 - Present</year>
+            <desc>
+                As a production engineer apprentice at GRDF, I contribute to the monitoring and maintenance
+                of Linux-based application environments. My responsibilities include the industrialization of
+                deployment processes, operating system patching on RHEL, and the daily monitoring of critical
+                business applications.
+            </desc>
+            <skills>
+                <skill>Bash</skill>
+                <skill>SQL</skill>
+                <skill>Linux RHEL 7/8</skill>
+                <skill>Application monitoring</skill>
+                <skill>Automation</skill>
+                <skill>GitLab CI</skill>
+            </skills>
+            </experience>
+        </lang>
+
+        <lang code="ar">
+            <experience>
+            <position>متدرب مهندس إنتاج معلوماتي</position>
+            <company>GRDF</company>
+            <location>باريس، فرنسا</location>
+            <year>سبتمبر 2023 - الآن</year>
+            <desc>
+                كمتدرب مهندس إنتاج معلوماتي في شركة GRDF، أشارك في مراقبة وصيانة بيئات التطبيقات العاملة
+                على أنظمة لينكس. تشمل مهامي أتمتة عمليات النشر، وتحديث أنظمة التشغيل RHEL، والمراقبة اليومية
+                للتطبيقات الحيوية الخاصة بالأعمال.
+            </desc>
+            <skills>
+                <skill>Bash</skill>
+                <skill>SQL</skill>
+                <skill>Linux RHEL 7/8</skill>
+                <skill>مراقبة التطبيقات</skill>
+                <skill>أتمتة</skill>
+                <skill>GitLab CI</skill>
+            </skills>
+            </experience>
+        </lang>
+    </experiences>
+
+    <!-- Projets -->
+    <projects>
+        <lang code="fr">
+            <project id="cinetica">
+                <title>Cinetica</title>
+                <domain>Développement Web</domain>
+                <desc>
+                    Bibliothèque en ligne de films et séries, développée avec React et Next.js.
+                    Création et intégration d'une API pour la gestion des films, séries et utilisateurs.
+                </desc>
+                <tech>
+                    <skill>React</skill>
+                    <skill>Next.js</skill>
+                    <skill>API REST</skill>
+                </tech>
+                <link>projects/cinetica.html</link>
+            </project>
+            <project id="patrick-parabox">
+                <title>Patrick's Parabox</title>
+                <domain>Jeu vidéo</domain>
+                <desc>
+                    Implémentation du jeu Sokoban à plusieurs dimensions en Java.
+                    Système de sauvegarde et de chargement automatique intégré.
+                </desc>
+                <tech>
+                    <skill>Java</skill>
+                    <skill>Architecture MVC</skill>
+                    <skill>Sérialisation</skill>
+                </tech>
+                <link>projects/patrick-parabox.html</link>
+            </project>
+            <project id="openai-gym">
+                <title>Reinforcement Learning avec OpenAI Gym</title>
+                <domain>IA</domain>
+                <desc>
+                    Implémentation des algorithmes de Q-learning, SARSA et Monte Carlo.
+                    Analyse des performances et comparaison des résultats.
+                </desc>
+                <tech>
+                    <skill>Python</skill>
+                    <skill>OpenAI Gym</skill>
+                    <skill>Q-Learning</skill>
+                    <skill>SARSA</skill>
+                    <skill>Monte Carlo</skill>
+                </tech>
+                <link>projects/openai-gym.html</link>
+            </project>
+            <project id="logistics-placement">
+                <title>Optimisation de placement de centres logistiques</title>
+                <domain>Optimisation</domain>
+                <desc>
+                    Étude opérationnelle sur le placement optimal de centres logistiques. 
+                    Modélisation avec des programmes linéaires en nombres entiers (PLNE) résolus via CPLEX, 
+                    et implémentation d'algorithmes heuristiques et métaheuristiques pour minimiser les coûts d'installation 
+                    et d'exploitation.
+                </desc>
+                <tech>
+                    <skill>Julia</skill>
+                    <skill>CPLEX</skill>
+                    <skill>PLNE</skill>
+                    <skill>Heuristiques</skill>
+                    <skill>Métaheuristiques</skill>
+                    <skill>Recherche opérationnelle</skill>
+                </tech>
+                <link>projects/logistics-placement.html</link>
+            </project>
+        </lang>
+        <lang code="en">
+            <project id="cinetica">
+                <title>Cinetica</title>
+                <domain>Web Development</domain>
+                <desc>
+                    Online library of movies and TV series, developed with React and Next.js.
+                    Created and integrated an API for managing movies, series, and users.
+                </desc>
+                <tech>
+                    <skill>React</skill>
+                    <skill>Next.js</skill>
+                    <skill>REST API</skill>
+                </tech>
+                <link>projects/cinetica.html</link>
+            </project>
+            <project id="patrick-parabox">
+                <title>Patrick's Parabox</title>
+                <domain>Video Game</domain>
+                <desc>
+                    Implementation of a multi-dimensional Sokoban game in Java.
+                    Integrated system for automatic save and load.
+                </desc>
+                <tech>
+                    <skill>Java</skill>
+                    <skill>MVC Architecture</skill>
+                    <skill>Serialization</skill>
+                </tech>
+                <link>projects/patrick-parabox.html</link>
+            </project>
+
+            <project id="openai-gym">
+                <title>Reinforcement Learning with OpenAI Gym</title>
+                <domain>AI</domain>
+                <desc>
+                    Implementation of Q-learning, SARSA, and Monte Carlo algorithms.
+                    Performance analysis and comparison of the results.
+                </desc>
+                <tech>
+                    <skill>Python</skill>
+                    <skill>OpenAI Gym</skill>
+                    <skill>Q-Learning</skill>
+                    <skill>SARSA</skill>
+                    <skill>Monte Carlo</skill>
+                </tech>
+                <link>projects/openai-gym.html</link>
+            </project>
+
+            <project id="logistics-placement">
+                <title>Logistics Center Placement Optimization</title>
+                <domain>Optimization</domain>
+                <desc>
+                    Operational study on optimal logistics center placement.
+                    Modeled with Integer Linear Programming (ILP) solved using CPLEX,
+                    and implemented heuristic and metaheuristic algorithms to minimize
+                    installation and operating costs.
+                </desc>
+                <tech>
+                    <skill>Julia</skill>
+                    <skill>CPLEX</skill>
+                    <skill>ILP</skill>
+                    <skill>Heuristics</skill>
+                    <skill>Metaheuristics</skill>
+                    <skill>Operations Research</skill>
+                </tech>
+                <link>projects/logistics-placement.html</link>
+            </project>
+        </lang>
+        <lang code="ar">
+            <project id="cinetica">
+                <title>Cinetica</title>
+                <domain>تطوير الويب</domain>
+                <desc>
+                    مكتبة إلكترونية للأفلام والمسلسلات، تم تطويرها باستخدام React و Next.js.
+                    تم إنشاء ودمج واجهة برمجية لإدارة الأفلام والمسلسلات والمستخدمين.
+                </desc>
+                <tech>
+                    <skill>React</skill>
+                    <skill>Next.js</skill>
+                    <skill>REST API</skill>
+                </tech>
+                <link>projects/cinetica.html</link>
+            </project>
+            <project id="patrick-parabox">
+                <title>Patrick's Parabox</title>
+                <domain>لعبة فيديو</domain>
+                <desc>
+                    تطوير لعبة سوكوبان متعددة الأبعاد باستخدام Java.
+                    دمج نظام للحفظ التلقائي والاسترجاع.
+                </desc>
+                <tech>
+                    <skill>Java</skill>
+                    <skill>معمارية MVC</skill>
+                    <skill>التسلسل (Serialization)</skill>
+                </tech>
+                <link>projects/patrick-parabox.html</link>
+            </project>
+
+            <project id="openai-gym">
+                <title>التعلم التعزيزي باستخدام OpenAI Gym</title>
+                <domain>الذكاء الاصطناعي</domain>
+                <desc>
+                    تنفيذ خوارزميات Q-learning وSARSA وMonte Carlo.
+                    تحليل الأداء ومقارنة النتائج.
+                </desc>
+                <tech>
+                    <skill>Python</skill>
+                    <skill>OpenAI Gym</skill>
+                    <skill>Q-Learning</skill>
+                    <skill>SARSA</skill>
+                    <skill>Monte Carlo</skill>
+                </tech>
+                <link>projects/openai-gym.html</link>
+            </project>
+
+            <project id="logistics-placement">
+                <title>تحسين توزيع مراكز لوجستية</title>
+                <domain>التحسين</domain>
+                <desc>
+                    دراسة تشغيلية لتحسين اختيار مواقع المراكز اللوجستية.
+                    تم النمذجة باستخدام البرمجة الخطية الصحيحة (PLNE) بواسطة CPLEX،
+                    بالإضافة إلى تنفيذ خوارزميات تقريبية وتكميلية لتقليل تكاليف التركيب والتشغيل.
+                </desc>
+                <tech>
+                    <skill>Julia</skill>
+                    <skill>CPLEX</skill>
+                    <skill>PLNE</skill>
+                    <skill>خوارزميات تقريبية</skill>
+                    <skill>خوارزميات ميتا</skill>
+                    <skill>بحوث العمليات</skill>
+                </tech>
+                <link>projects/logistics-placement.html</link>
+            </project>
+        </lang>
+    </projects>
+    <skills>
+        <lang code="fr">
+            <category name="Langages de programmation">
+                <skill>C</skill>
+                <skill>C++</skill>
+                <skill>Java</skill>
+                <skill>Python</skill>
+                <skill>OCaml</skill>
+                <skill>Julia</skill>
+            </category>
+            <category name="Web">
+                <skill>HTML</skill>
+                <skill>CSS</skill>
+                <skill>PHP</skill>
+                <skill>JavaScript</skill>
+                <skill>React</skill>
+                <skill>Node.js</skill>
+            </category>
+            <category name="Bases de données">
+                <skill>SQL</skill>
+                <skill>PL/SQL</skill>
+                <skill>MySQL</skill>
+                <skill>PostgreSQL</skill>
+                <skill>Oracle</skill>
+            </category>
+            <category name="Machine Learning">
+                <skill>Supervisé</skill>
+                <skill>Non supervisé</skill>
+                <skill>Apprentissage par renforcement</skill>
+            </category>
+            <category name="Optimisation">
+                <skill>Programmation linéaire (PL)</skill>
+                <skill>Programmation linéaire en nombres entiers (PLNE)</skill>
+            </category>
+            <category name="Déploiements automatisés">
+                <skill>GitLab CI/CD</skill>
+                <skill>Ansible</skill>
+            </category>
+            <category name="Outils de supervision">
+                <skill>Centreon</skill>
+                <skill>Dynatrace</skill>
+                <skill>ELK</skill>
+                <skill>EKARA</skill>
+            </category>
+            <category name="Systèmes UNIX">
+                <skill>RedHat</skill>
+                <skill>Debian</skill>
+            </category>
+            <category name="Réseaux Informatiques">
+                <skill>LDAP</skill>
+                <skill>DNS</skill>
+                <skill>DHCP</skill>
+                <skill>NAT/PAT</skill>
+            </category>
+            <category name="Conception logicielle">
+                <skill>Architecture logicielle</skill>
+                <skill>Modélisation</skill>
+            </category>
+            <category name="Web sémantique">
+                <skill>RDF</skill>
+                <skill>RDFa</skill>
+                <skill>OWL</skill>
+                <skill>SPARQL</skill>
+                <skill>XML</skill>
+                <skill>XSLT</skill>
+            </category>
+        </lang>
+        <lang code="en">
+            <category name="Programming Languages">
+                <skill>C</skill>
+                <skill>C++</skill>
+                <skill>Java</skill>
+                <skill>Python</skill>
+                <skill>OCaml</skill>
+                <skill>Julia</skill>
+            </category>
+            <category name="Web">
+                <skill>HTML</skill>
+                <skill>CSS</skill>
+                <skill>PHP</skill>
+                <skill>JavaScript</skill>
+                <skill>React</skill>
+                <skill>Node.js</skill>
+            </category>
+            <category name="Databases">
+                <skill>SQL</skill>
+                <skill>PL/SQL</skill>
+                <skill>MySQL</skill>
+                <skill>PostgreSQL</skill>
+                <skill>Oracle</skill>
+            </category>
+            <category name="Machine Learning">
+                <skill>Supervised</skill>
+                <skill>Unsupervised</skill>
+                <skill>Reinforcement Learning</skill>
+            </category>
+            <category name="Optimization">
+                <skill>Linear Programming (LP)</skill>
+                <skill>Integer Linear Programming (ILP)</skill>
+            </category>
+            <category name="Automated Deployment">
+                <skill>GitLab CI/CD</skill>
+                <skill>Ansible</skill>
+            </category>
+            <category name="Monitoring Tools">
+                <skill>Centreon</skill>
+                <skill>Dynatrace</skill>
+                <skill>ELK</skill>
+                <skill>EKARA</skill>
+            </category>
+            <category name="UNIX Environments">
+                <skill>RedHat</skill>
+                <skill>Debian</skill>
+            </category>
+            <category name="Computer Networks">
+                <skill>LDAP</skill>
+                <skill>DNS</skill>
+                <skill>DHCP</skill>
+                <skill>NAT/PAT</skill>
+            </category>
+            <category name="Software Design">
+                <skill>Software Architecture</skill>
+                <skill>Modeling</skill>
+            </category>
+            <category name="Semantic Web">
+                <skill>RDF</skill>
+                <skill>RDFa</skill>
+                <skill>OWL</skill>
+                <skill>SPARQL</skill>
+                <skill>XML</skill>
+                <skill>XSLT</skill>
+            </category>
+        </lang>
+        <lang code="ar">
+            <category name="لغات البرمجة">
+                <skill>C</skill>
+                <skill>C++</skill>
+                <skill>Java</skill>
+                <skill>Python</skill>
+                <skill>OCaml</skill>
+                <skill>Julia</skill>
+            </category>
+
+            <category name="تطوير الويب">
+                <skill>HTML</skill>
+                <skill>CSS</skill>
+                <skill>PHP</skill>
+                <skill>JavaScript</skill>
+                <skill>React</skill>
+                <skill>Node.js</skill>
+            </category>
+
+            <category name="قواعد البيانات">
+                <skill>SQL</skill>
+                <skill>PL/SQL</skill>
+                <skill>MySQL</skill>
+                <skill>PostgreSQL</skill>
+                <skill>Oracle</skill>
+            </category>
+
+            <category name="تعلم الآلة">
+                <skill>تعلم تحت الإشراف</skill>
+                <skill>تعلم بدون إشراف</skill>
+                <skill>التعلم التعزيزي</skill>
+            </category>
+
+            <category name="التحسين">
+                <skill>البرمجة الخطية</skill>
+                <skill>البرمجة الخطية بالأعداد الصحيحة</skill>
+            </category>
+
+            <category name="النشر الآلي">
+                <skill>GitLab CI/CD</skill>
+                <skill>Ansible</skill>
+            </category>
+
+            <category name="أدوات المراقبة">
+                <skill>Centreon</skill>
+                <skill>Dynatrace</skill>
+                <skill>ELK</skill>
+                <skill>EKARA</skill>
+            </category>
+
+            <category name="بيئات UNIX">
+                <skill>RedHat</skill>
+                <skill>Debian</skill>
+            </category>
+
+            <category name="الشبكات">
+                <skill>LDAP</skill>
+                <skill>DNS</skill>
+                <skill>DHCP</skill>
+                <skill>NAT/PAT</skill>
+            </category>
+
+            <category name="تصميم البرمجيات">
+                <skill>هندسة البرمجيات</skill>
+                <skill>النمذجة</skill>
+            </category>
+
+            <category name="الويب الدلالي">
+                <skill>RDF</skill>
+                <skill>RDFa</skill>
+                <skill>OWL</skill>
+                <skill>SPARQL</skill>
+                <skill>XML</skill>
+                <skill>XSLT</skill>
+            </category>
+        </lang>
+    </skills>
+    <interests>
+        <lang code="fr">
+            <interest>Cinéma et séries</interest>
+            <interest>Randonnée</interest>
+            <interest>Judo (6 ans de pratique)</interest>
+            <interest>Tennis</interest>
+        </lang>
+
+        <lang code="en">
+            <interest>Movies and TV series</interest>
+            <interest>Hiking</interest>
+            <interest>Judo (6 years of practice)</interest>
+            <interest>Tennis</interest>
+        </lang>
+
+        <lang code="ar">
+            <interest>السينما والمسلسلات</interest>
+            <interest>المشي في الطبيعة</interest>
+            <interest>الجودو (6 سنوات ممارسة)</interest>
+            <interest>التنس</interest>
+        </lang>
+    </interests>
+</content>
