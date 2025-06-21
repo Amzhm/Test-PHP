@@ -7,45 +7,22 @@
       "runtime": "@vercel/php@0.6.0"
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/test",
-      "dest": "/test.php"
+      "source": "/test",
+      "destination": "/test.php"
     },
     {
-      "src": "/fr/(.*)",
-      "dest": "/index.php?lang=fr&section=$1"
+      "source": "/fr/(.*)",
+      "destination": "/index.php?lang=fr&section=$1"
     },
     {
-      "src": "/en/(.*)",
-      "dest": "/index.php?lang=en&section=$1"
+      "source": "/en/(.*)",
+      "destination": "/index.php?lang=en&section=$1"
     },
     {
-      "src": "/ar/(.*)",
-      "dest": "/index.php?lang=ar&section=$1"
-    },
-    {
-      "src": "/",
-      "dest": "/index.php?lang=fr&section=accueil"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
+      "source": "/ar/(.*)",
+      "destination": "/index.php?lang=ar&section=$1"
     }
   ]
 }
