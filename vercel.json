@@ -1,28 +1,7 @@
 {
   "functions": {
-    "index.php": {
-      "runtime": "@vercel/php@0.6.0"
-    },
-    "test.php": {
+    "api/*.php": {
       "runtime": "@vercel/php@0.6.0"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/test",
-      "destination": "/test.php"
-    },
-    {
-      "source": "/fr/(.*)",
-      "destination": "/index.php?lang=fr&section=$1"
-    },
-    {
-      "source": "/en/(.*)",
-      "destination": "/index.php?lang=en&section=$1"
-    },
-    {
-      "source": "/ar/(.*)",
-      "destination": "/index.php?lang=ar&section=$1"
-    }
-  ]
+  }
 }
