@@ -88,7 +88,7 @@ try {
     <link rel="canonical" href="<?php echo $baseUrl; ?>?lang=<?php echo $lang; ?>&amp;section=<?php echo $section; ?>" />
     
     <!-- CSS -->
-    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content.css" />
     
     <!-- Métadonnées techniques -->
     <meta name="generator" content="PHP XSL Transformation" />
