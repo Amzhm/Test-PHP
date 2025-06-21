@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Définition des types -->
+
+  <!-- Langue -->
+  <xs:complexType name="LangType">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- Infos personnelles -->
+  <xs:complexType name="PersonalInfoType">
+    <xs:sequence>
+      <xs:element name="lang" type="LangType" maxOccurs="3"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Formation -->
+  <xs:complexType name="EducationElementType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="year" type="xs:string"/>
+      <xs:element name="university" type="xs:string"/>
+      <xs:element name="location" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EducationsLangType">
+    <xs:sequence>
+      <xs:element name="education" type="EducationElementType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="EducationsType">
+    <xs:sequence>
+      <xs:element name="lang" type="EducationsLangType" maxOccurs="3"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Expériences -->
+  <xs:complexType name="SkillListType">
+    <xs:sequence>
+      <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExperienceElementType">
+    <xs:sequence>
+      <xs:element name="position" type="xs:string"/>
+      <xs:element name="company" type="xs:string"/>
+      <xs:element name="location" type="xs:string"/>
+      <xs:element name="year" type="xs:string"/>
+      <xs:element name="desc" type="xs:string"/>
+      <xs:element name="skills" type="SkillListType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExperiencesLangType">
+    <xs:sequence>
+      <xs:element name="experience" type="ExperienceElementType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ExperiencesType">
+    <xs:sequence>
+      <xs:element name="lang" type="ExperiencesLangType" maxOccurs="3"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Projets -->
+  <xs:complexType name="TechType">
+    <xs:sequence>
+      <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectElementType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="domain" type="xs:string"/>
+      <xs:element name="desc" type="xs:string"/>
+      <xs:element name="tech" type="TechType"/>
+      <xs:element name="link" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectsLangType">
+    <xs:sequence>
+      <xs:element name="project" type="ProjectElementType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectsType">
+    <xs:sequence>
+      <xs:element name="lang" type="ProjectsLangType" maxOccurs="3"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Compétences -->
+  <xs:complexType name="CategoryType">
+    <xs:sequence>
+      <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="SkillsLangType">
+    <xs:sequence>
+      <xs:element name="category" type="CategoryType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="SkillsType">
+    <xs:sequence>
+      <xs:element name="lang" type="SkillsLangType" maxOccurs="3"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Centres d'intérêt -->
+  <xs:complexType name="InterestsLangType">
+    <xs:sequence>
+      <xs:element name="interest" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="InterestsType">
+    <xs:sequence>
+      <xs:element name="lang" type="InterestsLangType" maxOccurs="3"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Racine -->
+  <xs:element name="content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="personal_info" type="PersonalInfoType"/>
+        <xs:element name="educations" type="EducationsType"/>
+        <xs:element name="experiences" type="ExperiencesType"/>
+        <xs:element name="projects" type="ProjectsType"/>
+        <xs:element name="skills" type="SkillsType"/>
+        <xs:element name="interests" type="InterestsType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
