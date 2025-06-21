@@ -8,16 +8,29 @@ $section = isset($_GET['section']) && in_array($_GET['section'], $validSections)
 
 // Fonction de transformation XML/XSL
 function transformXMLWithXSL($xmlFile, $xslFile, $lang, $section) {
+    // Construire les chemins complets vers les fichiers
+    $xmlPath = __DIR__ . '/' . $xmlFile;
+    $xslPath = __DIR__ . '/' . $xslFile;
+    
+    // Vérifier l'existence des fichiers avant de les charger
+    if (!file_exists($xmlPath)) {
+        throw new Exception("Erreur lors du chargement du fichier XML: $xmlFile (fichier non trouvé dans " . __DIR__ . ")");
+    }
+    
+    if (!file_exists($xslPath)) {
+        throw new Exception("Erreur lors du chargement du fichier XSL: $xslFile (fichier non trouvé dans " . __DIR__ . ")");
+    }
+    
     // Charger le document XML
     $xml = new DOMDocument();
-    if (!$xml->load($xmlFile)) {
-        throw new Exception("Erreur lors du chargement du fichier XML: $xmlFile");
+    if (!$xml->load($xmlPath)) {
+        throw new Exception("Erreur lors du chargement du fichier XML: $xmlPath");
     }
     
     // Charger la feuille de style XSL
     $xsl = new DOMDocument();
-    if (!$xsl->load($xslFile)) {
-        throw new Exception("Erreur lors du chargement du fichier XSL: $xslFile");
+    if (!$xsl->load($xslPath)) {
+        throw new Exception("Erreur lors du chargement du fichier XSL: $xslPath");
     }
     
     // Créer le processeur XSLT
@@ -156,6 +169,12 @@ try {
     <h1>Erreur de transformation XML/XSL</h1>
     <p>Une erreur s'est produite lors de la génération de la page :</p>
     <p><strong><?php echo htmlspecialchars($e->getMessage()); ?></strong></p>
+    <p><strong>Répertoire actuel :</strong> <?php echo __DIR__; ?></p>
+    <p><strong>Fichiers présents :</strong></p>
+    <ul>
+        <li>content.xml : <?php echo file_exists(__DIR__ . '/content.xml') ? '✓ Présent' : '✗ Absent'; ?></li>
+        <li>content.xsl : <?php echo file_exists(__DIR__ . '/content.xsl') ? '✓ Présent' : '✗ Absent'; ?></li>
+    </ul>
     <p><a href="?lang=fr&section=accueil">Retour à l'accueil</a></p>
 </body>
 </html>
