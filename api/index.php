@@ -8,17 +8,17 @@ $section = isset($_GET['section']) && in_array($_GET['section'], $validSections)
 
 // Fonction de transformation XML/XSL
 function transformXMLWithXSL($xmlFile, $xslFile, $lang, $section) {
-    // Construire les chemins complets vers les fichiers
-    $xmlPath = __DIR__ . '/' . $xmlFile;
-    $xslPath = __DIR__ . '/' . $xslFile;
+    // Construire les chemins complets vers les fichiers à la racine
+    $xmlPath = dirname(__DIR__) . '/' . $xmlFile;
+    $xslPath = dirname(__DIR__) . '/' . $xslFile;
     
     // Vérifier l'existence des fichiers avant de les charger
     if (!file_exists($xmlPath)) {
-        throw new Exception("Erreur lors du chargement du fichier XML: $xmlFile (fichier non trouvé dans " . __DIR__ . ")");
+        throw new Exception("Erreur lors du chargement du fichier XML: $xmlFile (fichier non trouvé dans " . dirname(__DIR__) . ")");
     }
     
     if (!file_exists($xslPath)) {
-        throw new Exception("Erreur lors du chargement du fichier XSL: $xslFile (fichier non trouvé dans " . __DIR__ . ")");
+        throw new Exception("Erreur lors du chargement du fichier XSL: $xslFile (fichier non trouvé dans " . dirname(__DIR__) . ")");
     }
     
     // Charger le document XML
@@ -88,7 +88,7 @@ try {
     <link rel="canonical" href="<?php echo $baseUrl; ?>?lang=<?php echo $lang; ?>&amp;section=<?php echo $section; ?>" />
     
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content.css" />
+    <link rel="stylesheet" href="/content.css" />
     
     <!-- Métadonnées techniques -->
     <meta name="generator" content="PHP XSL Transformation" />
@@ -170,10 +170,11 @@ try {
     <p>Une erreur s'est produite lors de la génération de la page :</p>
     <p><strong><?php echo htmlspecialchars($e->getMessage()); ?></strong></p>
     <p><strong>Répertoire actuel :</strong> <?php echo __DIR__; ?></p>
+    <p><strong>Répertoire racine :</strong> <?php echo dirname(__DIR__); ?></p>
     <p><strong>Fichiers présents :</strong></p>
     <ul>
-        <li>content.xml : <?php echo file_exists(__DIR__ . '/content.xml') ? '✓ Présent' : '✗ Absent'; ?></li>
-        <li>content.xsl : <?php echo file_exists(__DIR__ . '/content.xsl') ? '✓ Présent' : '✗ Absent'; ?></li>
+        <li>content.xml : <?php echo file_exists(dirname(__DIR__) . '/content.xml') ? '✓ Présent' : '✗ Absent'; ?></li>
+        <li>content.xsl : <?php echo file_exists(dirname(__DIR__) . '/content.xsl') ? '✓ Présent' : '✗ Absent'; ?></li>
     </ul>
     <p><a href="?lang=fr&section=accueil">Retour à l'accueil</a></p>
 </body>
